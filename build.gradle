@@ -2,6 +2,17 @@ plugins {
 	id 'org.springframework.boot' version '2.4.0'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
+	id "application"
+}
+
+apply plugin : "java"
+
+ext {
+	javaMainClass = "ru.websocket.tickerapp.TickerappApplication"
+}
+
+application {
+	mainClassName = javaMainClass
 }
 
 group = 'ru.websocket.tickerapp'

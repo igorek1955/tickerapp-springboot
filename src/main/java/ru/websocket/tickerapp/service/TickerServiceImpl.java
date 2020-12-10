@@ -43,6 +43,7 @@ public class TickerServiceImpl implements TickerService {
         return ticker;
     }
 
+    @Override
     public void saveTicker(Ticker ticker){
         if(compareToLast(ticker)){
             updateSecs = 0;

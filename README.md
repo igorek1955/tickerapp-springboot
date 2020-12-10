@@ -14,6 +14,7 @@ Currently, SockJS frontend real time update display hasn't been implemented yet.
 To launch application use IDE of your choosing or use console. 
 To run application from console ented this command: 
 ```
+./gradlew build
 ./gradlew run
 ```
 
